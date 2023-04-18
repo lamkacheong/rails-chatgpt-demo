@@ -11,13 +11,13 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2023_03_23_080414) do
-  create_table "conversations", force: :cascade do |t|
+  create_table "conversations", charset: "utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "messages", force: :cascade do |t|
-    t.integer "conversation_id"
+  create_table "messages", charset: "utf8", force: :cascade do |t|
+    t.bigint "conversation_id"
     t.text "content"
     t.integer "role", default: 0
     t.integer "status", default: 0

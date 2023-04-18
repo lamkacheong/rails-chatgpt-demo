@@ -78,3 +78,5 @@ gem "dotenv-rails", "~> 2.8"
 gem "redis", "~> 5.0"
 
 gem "ruby-openai", "~> 3.6"
+
+gem "mysql2"
